@@ -7,6 +7,7 @@ export const config = {
   mongoUri: process.env.MONGO_URI as string,
   dbName: process.env.DB_NAME as string,
   collections: {
-    claims: process.env.COLLECTION_CLAIMS as string
+    claims: process.env.COLLECTION_CLAIMS as string,
+    insurers: process.env.COLLECTION_INSURERS as string
   }
 }
