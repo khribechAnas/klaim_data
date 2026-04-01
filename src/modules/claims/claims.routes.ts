@@ -9,8 +9,6 @@ const repository = new ClaimsRepository()
 const service = new ClaimsService(repository)
 const controller = new ClaimsController(service)
 
-router.get('/claims/insurers', controller.getInsurers)
-router.get('/claims/insurers/:id', controller.getInsurerClaims)
-router.get('/claims', controller.getAll)
+router.get('/insurer', controller.getInsurers)
 
 export default router
